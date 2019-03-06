@@ -4,6 +4,8 @@ npm run build
 
 node server
 
+Go to http://localhost:8999/time or http://localhost:8999/random to see it working
+
 ### So what?
 
 It turns ES6 into code that node will run, apparently without needing babel...
