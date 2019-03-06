@@ -11,8 +11,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
   "devDependencies": {
-    "express": "^4.16.4",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   }
