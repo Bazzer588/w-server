@@ -10,6 +10,10 @@ Go to http://localhost:8999/time or http://localhost:8999/random to see it worki
 
 It turns ES6 into code that node will run, apparently without needing babel...
 
-The resulting file /server/index.js can be run stand-alone, which could be handy for quick deployment. Note this file is 544 KB in size, but you don't need any node_modules.
+The resulting file /server/index.js can be run stand-alone, which could be handy for quick deployment. Note this file is 544KB in size, but you don't need any node_modules.
 
 Tested with node v9.3.0 and npm 5.5.1
+
+### Source maps / error handling
+
+http://localhost:8999/random?foo=something will trigger a deliberate server error, but the stack trace points at the /server/index.js file - needs work to have a proper stack trace for server side errors.
