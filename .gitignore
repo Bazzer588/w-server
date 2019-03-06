@@ -6,13 +6,8 @@
 # testing
 /coverage
 
-# production
-/build
-/dist
-/lib
-
-# hack test compile
-/components
+# production build
+/server
 
 # misc
 .DS_Store

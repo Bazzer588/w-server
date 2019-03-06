@@ -17,5 +17,9 @@ module.exports = {
 
 /*
    Critical dependency: the request of a dependency is an expression
+   
+   If you enable 'express' in internals, this warning disappears, however only the /src appears in the output
+   
+   Otherwise, we get a complete js build in /server/index.js (about 544 KB)
 
 */
