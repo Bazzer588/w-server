@@ -1,15 +1,13 @@
 {
   "name": "w-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "A node express server built with webpack 4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "go": "babel-node src/index.js"
+    "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Barry Parkinson",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
