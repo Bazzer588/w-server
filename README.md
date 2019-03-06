@@ -1,14 +1,13 @@
-# w-server
-A simple express server built with webpack 4
+### A simple express server built with webpack 4
 
-## build it with
+### build it with
 
 npm run build
 
-## run it with
+### run it with
 
 node server
 
-### So ?
+### So what?
 
 It turns ES6 into code that node will run, apparently without needing babel...
