@@ -1,6 +1,7 @@
 ### A simple express server built with webpack 4
 
 npm run build
+
 node server
 
 ### So what?
