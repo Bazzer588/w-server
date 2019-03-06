@@ -16,4 +16,8 @@ Tested with node v9.3.0 and npm 5.5.1
 
 ### Source maps / error handling
 
-http://localhost:8999/random?foo=something will trigger a deliberate server error, but the stack trace points at the /server/index.js file - needs work to have a proper stack trace for server side errors.
+http://localhost:8999/random?foo=something will trigger a deliberate server error, but the stack trace points at the webpacked /server/index.js file - needs work to have a proper stack trace for server side errors.
+
+### lint, test, inspect etc
+
+Of course these need adding - the objective here is to get a simpler build so /node_modules doesn't have to be deployed
