@@ -10,6 +10,6 @@ Go to http://localhost:8999/time or http://localhost:8999/random to see it worki
 
 It turns ES6 into code that node will run, apparently without needing babel...
 
-The resulting file /server/index.js can be run stand-alone without needing all the node modules installed, which could be handy for quick deployment
+The resulting file /server/index.js can be run stand-alone, which could be handy for quick deployment. Note this file is 544 KB in size, but you don't need any node_modules.
 
 Tested with node v9.3.0 and npm 5.5.1
