@@ -12,13 +12,13 @@ module.exports = {
   externals: [
     // 'express' // see note on Critical dependency: the request of a dependency is an expression
   ]
-  // exprContextCritical: false
+  // exprContextCritical: false  // supposed to get rid of the warning, but actually provokes an error !
 };
 
-/*
-   Critical dependency: the request of a dependency is an expression
+/* On build we get a WARNING: Critical dependency: the request of a dependency is an expression
    
-   If you enable 'express' in internals, this warning disappears, however only the /src appears in the output
+   If you enable 'express' in externals[], this warning disappears, however only the /src appears in the output
+   Which is no good, as it doesn't require express...
    
    Otherwise, we get a complete js build in /server/index.js (about 544 KB)
 
