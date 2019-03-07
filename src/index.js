@@ -13,6 +13,13 @@ app.get('/time', (req, res) => {
 
 app.get('/random', random );
 
+app.use('/', (req,res,next) => {
+    // logReq(path+' STATIC', req);
+    express.static('./public', { maxAge: 10000 })(req,res,next);
+});
+
+// start listening
+
 const port = 8999;
 
 app.listen(port, () => {

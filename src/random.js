@@ -5,5 +5,5 @@ export function random (req, res) {
     if (req.query.foo) {
         throw(new Error('You said foo'));
     }
-    res.send({ random, reqQuery: req.query });
+    res.send({ random, reqQuery: req.query, hello: Date.now() });
 }

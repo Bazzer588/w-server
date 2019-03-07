@@ -10,6 +10,9 @@
 /server
 
 # misc
+/.idea
+*.iml
+
 .DS_Store
 .env.local
 .env.development.local
