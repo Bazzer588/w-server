@@ -6,9 +6,9 @@ const app = express();
 app.get('/time', (req, res) => {
     const date = new Date();
     console.log('GETTIME',date);
-    const spreadThis = {age: 38, note: 'here be some text...'};
+    const spreadThis = {date, age: 38, note: 'here be some text...'};
     res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate'); // IE11 needs this
-    res.send({date, ...spreadThis});
+    res.send({ ...req.query, ...spreadThis });
 });
 
 app.get('/random', random );

@@ -5,5 +5,18 @@ export function random (req, res) {
     if (req.query.foo) {
         throw(new Error('You said foo'));
     }
-    res.send({ random, reqQuery: req.query, hello: Date.now() });
+    const T = new AThing();
+    res.send({ random, reqQuery: req.query, ...T.getv() });
+}
+
+class AThing {
+
+    constructor () {
+        this.When = Date.now();
+    }
+
+    getv () {
+        return { when: this.When };
+    }
+
 }
