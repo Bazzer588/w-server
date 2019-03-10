@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "build:f": "webpack --env.FOO_BAR=TestFooBar! --env.WOOT=TestWoot",
     "start": "webpack --watch"
   },
   "keywords": [],
