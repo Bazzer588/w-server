@@ -3,7 +3,8 @@ const path = require('path');
 
 module.exports = (env) => {
 
-    console.log('BUILD ENV', env);
+    console.log('BUILD ENV', env); // this 'env' is not the OS environment, these are set with --env.WOOT=902
+    // console.log('PROCESS ENV',process.env);  // this is the OS env - LOTS of values here
 
     return {
         target: 'node',
@@ -22,7 +23,7 @@ module.exports = (env) => {
         },
         plugins: [
             new webpack.DefinePlugin({
-                MAGIC_DEFINE: JSON.stringify('8324783')
+                MAGIC_DEFINE: JSON.stringify('magic')
                 //'process.env.WOOT': JSON.stringify(process.env.WOOT)
             }),
             new webpack.EnvironmentPlugin(['WOOT'])

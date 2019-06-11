@@ -6,12 +6,13 @@
   "scripts": {
     "build": "webpack",
     "build:f": "webpack --env.FOO_BAR=TestFooBar! --env.WOOT=TestWoot",
-    "start": "webpack --watch"
+    "start": "webpack --watch --progress"
   },
   "keywords": [],
   "author": "Barry Parkinson",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.16.4"
   },
   "devDependencies": {
